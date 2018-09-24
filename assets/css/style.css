@@ -19,19 +19,51 @@ Tango Pink: DB6D7B;
 	background-image: url('../img/bride2.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 500px;
 }
-
+                                                                                                                                 
 .container-jumbotron {
 	background-color: rgba(219, 109, 123, 0.37);
 	width: 100%; 
 	margin: 0 auto;
 }
 
+.container {
+	background-color: white; 
+	width: 100%; 
+	align-content: center;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+#heading-img {
+	margin-top: 60px;
+	width: 100%;
+	height: 500px;
+	filter: brightness(120%);
+}
+
+.centered {
+	background-color: rgba(238,169,184,0.7);	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: ;
+	text-transform: uppercase;
+	color: white;
+	font-size: 90px;
+	letter-spacing: 5px;
+}
+
 .text {
 	margin: 150px;
 	padding: 30px;
 }
+
+.container-brand {
+		margin: 0 auto;
+		left: 20%;
+	}
 
 .btn {
 	padding: 14px 24px;
@@ -46,12 +78,12 @@ Tango Pink: DB6D7B;
 }
 
 .btn-primary {
-	background: #FBE8E6;
-	color: #ffffff;
+	background: #DB6D7B;
+	color: #000;
 }
 
 .btn-primary:hover {
-
+	background: #C8A3A0;
 } 
 .btn-primary:link, 
 .btn-primary:visited, 
@@ -83,7 +115,6 @@ Tango Pink: DB6D7B;
 	color: #DB6D7B;
 	box-shadow: none;
 }
-
 a:link,
 a:visited,
 a:active {
@@ -95,16 +126,11 @@ a:hover {
 }
 
 
-/*
-current colors: #007299 blue to 99005e magenta
-33a6cc to cc3333
-0099cc to 4700cc - front of button 
-*/
-
 /*Navbar*/
 .header-expand {
 	background-color: #000;
 	height: 8vh;
+	margin-bottom: 30px;
 	padding-top: 6px;
 }
 
@@ -149,13 +175,6 @@ current colors: #007299 blue to 99005e magenta
 	float: left;
 }
 
-
-.container {
-	background-color: white; 
-	width: 100%; 
-	align-content: center;
-}
-
 /*Carousel*/
 .carousel-inner {
 	background-color: rgba(219, 109, 123, 0.37);
@@ -167,9 +186,6 @@ current colors: #007299 blue to 99005e magenta
 	background-color: rgba(219, 109, 123, 0.37);
 }
 
-.carousel-item {
-	height: 750px;
-}
 	
 .grey-boxes1-img {
 	width: 100px;
@@ -199,6 +215,11 @@ current colors: #007299 blue to 99005e magenta
 
 .card-title {
 	font-size: 30px
+}
+
+.img-gallery {
+	width: 300px;
+	height: 400px;
 }
 
 .gallery-block.grid-gallery{
@@ -238,9 +259,86 @@ current colors: #007299 blue to 99005e magenta
   }
 }
 
+.pagination {
+	margin: 40px 20px 0 20px;
+}
+
+
+.page-link:hover {
+	background: #DB6D7B;
+	color: 000;
+}
+
+
+.page-link:link,
+.page-link:visited,
+.page-link:active {
+	color: grey;
+} 
+
+/*Services*/
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    color: #58595a;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: #85878c;
+}
+
+/* Styles for the gallery */
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.tz-gallery img {
+    border-radius: 2px;
+}
+
+.tz-gallery .caption{
+    padding: 26px 30px;
+    text-align: center;
+}
+
+.tz-gallery .caption h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.tz-gallery .caption p {
+    font-size: 12px;
+    color: #7b7d7d;
+    margin: 0;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+/*Footer*/
 footer {	
 	background-color: #FBE8E6;
-	padding: 30px;
+	padding: 0 60px 30px 60px;
 	margin-top: 50px;
 }
 
@@ -260,6 +358,9 @@ footer {
 	color: white;
 }
 
+.footer-pad {
+	padding-top: 30px;
+}
 /*Contact Form*/
 .bg-photo-contact {
 	text-align: center;
@@ -269,3 +370,101 @@ footer {
 	background-size: 100%;
 	height: 500px;
 }
+
+/*About*/
+.container-about {
+	margin-top: 120px;
+}
+
+.about-pic {
+	width: 500px;
+	height: 700px;
+	border: 2px solid black;
+}
+
+.col-pad {
+	padding-top: 30px;
+}
+
+/*Media Query*/
+
+@media only screen and (max-width: 400px) {
+
+	.header-expand {
+		height: 10vh;
+	}
+
+	.navbar {
+		margin-top: 60px;
+	}
+
+	.brand-container {
+		padding: 0 30px 0 30px;
+		align: center;	
+	}
+
+	.heading-img {
+		height: 10vh;	
+	}
+
+	.carousel-img {
+		height: 400px;
+	}
+
+	/*About*/
+	.about-pic {
+	width: 300px;
+	height: 400px;
+	margin: 0 auto;
+	}
+
+	/*Footer*/
+	footer {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+
+	.header-expand {
+		height: 10vh;
+	}
+
+	.navbar {
+		margin-top: 60px;
+	}
+
+	.brands {
+		margin: 0 auto;
+	}
+
+	.heading-img {
+		width:  
+	}
+
+	.carousel-img {
+		height: 500px;
+	}
+
+	.img-gallery {
+	width: 260px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0; 
+	}
+
+	/*About*/
+	.about-pic {
+	width: 500px;
+	height: 700px;
+	margin: 0 auto;
+	}
+
+	/*Footer*/
+	footer {
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
