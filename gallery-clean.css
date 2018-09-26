@@ -10,6 +10,7 @@ body {
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
     color: #58595a;
+    margin-bottom: -50px;
 }
 
 .gallery-container p.page-description {
@@ -23,6 +24,7 @@ body {
 
 .tz-gallery {
     padding: 40px;
+    padding-left: 10px;
 }
 
 .tz-gallery .thumbnail {

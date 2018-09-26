@@ -1,0 +1,80 @@
+/*!
+ * Start Bootstrap - Full (https://startbootstrap.com/template-overviews/full)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
+ */
+
+body {
+  background: url('../img/gallery-1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Playfair Display SC', serif;
+font-family: 'Roboto', sans-serif;
+}
+
+.landing-container {
+	text-align: center; color: #fff; 
+	background-color: rgba(238, 169, 184, 0.7); 
+	margin-top: 400px; padding: 10px 0 30px 0; 
+	font-size: 40px; 
+	letter-spacing: 2.5px;
+}
+
+#heading-landing {
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: white;
+}
+
+a:hover {
+	color: #D0879D;
+}
+
+.btn-primary {
+	background: #DB6D7B;
+	color: #000;
+	border: 2px solid #FBE8E6;
+	font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+	background-color: #C8A3A0;
+	color: white;
+} 
+
+/*Media Query*/
+
+@media only screen and (max-width: 400px) {
+	.landing-container {
+		margin-top: 250px;
+		padding-right: 10px;
+		padding-left: 10x;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+	.landing-container {
+		margin-top: 400px;
+		font-size: 80px; 
+		padding-bottom: 40px;
+	}
+
+	.btn-primary {
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+
+}

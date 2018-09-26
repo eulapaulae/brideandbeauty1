@@ -10,6 +10,11 @@ Tango Pink: DB6D7B;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*Landing Page*/
@@ -31,8 +36,8 @@ Tango Pink: DB6D7B;
 	background-color: white; 
 	width: 100%; 
 	align-content: center;
-	padding: 20px;
-	margin: 0 auto;
+	padding: 30px;
+	margin-top: 50px;
 }
 
 #heading-img {
@@ -40,19 +45,6 @@ Tango Pink: DB6D7B;
 	width: 100%;
 	height: 500px;
 	filter: brightness(120%);
-}
-
-.centered {
-	background-color: rgba(238,169,184,0.7);	
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-family: ;
-	text-transform: uppercase;
-	color: white;
-	font-size: 90px;
-	letter-spacing: 5px;
 }
 
 .text {
@@ -131,7 +123,7 @@ a:hover {
 	background-color: #000;
 	height: 8vh;
 	margin-bottom: 30px;
-	padding-top: 6px;
+	padding-top: 15px;
 }
 
 .header-expand-text {
@@ -154,6 +146,11 @@ a:hover {
 	height: 60px;
 	padding: 10px 20px;
 	margin: 40px auto 0 auto;
+}
+
+#navbarCollapse {
+	background-color: #D0879D;
+	width: 100%;
 }
 
 .black-container {
@@ -277,12 +274,6 @@ a:hover {
 } 
 
 /*Services*/
-body {
-    background-color: #fff;
-    min-height: 100vh;
-    font: normal 16px sans-serif;
-}
-
 .gallery-container h1 {
     text-align: center;
     margin-top: 70px;
@@ -335,6 +326,12 @@ body {
     background-color: transparent !important;
 }
 
+.lightbox-img {
+	width: 250px;
+	height: 350px;
+	margin: 0 auto;
+}
+
 /*Footer*/
 footer {	
 	background-color: #FBE8E6;
@@ -360,7 +357,14 @@ footer {
 
 .footer-pad {
 	padding-top: 30px;
+	text-align: center;
 }
+
+.footer-end-text {
+	background-color:grey;
+	margin-bottom: -7px;
+}
+
 /*Contact Form*/
 .bg-photo-contact {
 	text-align: center;
@@ -369,6 +373,15 @@ footer {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 500px;
+}
+
+.img-text {
+	background-color: rgba(238, 169, 184, 0.7); 
+	position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); width: 100%; 
+    text-align: center;
 }
 
 /*About*/
@@ -389,9 +402,13 @@ footer {
 /*Media Query*/
 
 @media only screen and (max-width: 400px) {
+	.jumbotron {
+		padding-left: 150px;
+	}
 
 	.header-expand {
 		height: 10vh;
+		padding-top: 7px; 
 	}
 
 	.navbar {
@@ -418,10 +435,24 @@ footer {
 	margin: 0 auto;
 	}
 
+	/*Services*/
+	.get-started {
+		margin-top: -30px;
+	}
+
+	/*Contact*/
+	.img-text {
+		top: 55%;
+	}
+
 	/*Footer*/
 	footer {
 		margin: 0 auto;
 		text-align: center;
+	}
+
+	.location {
+		margin-top: 30px;
 	}
 }
 
@@ -429,6 +460,7 @@ footer {
 
 	.header-expand {
 		height: 10vh;
+		font-size: 18px; 
 	}
 
 	.navbar {
@@ -454,6 +486,17 @@ footer {
 	padding: 0; 
 	}
 
+	/*Services*/
+	.gallery-container {
+		width: 0 auto;
+	}
+
+	.lightbox-img {
+		width: 200px;
+		height: 250px;
+		margin: 0 auto;
+	}
+
 	/*About*/
 	.about-pic {
 	width: 500px;
@@ -461,10 +504,19 @@ footer {
 	margin: 0 auto;
 	}
 
+	/*Contact*/
+	
+
 	/*Footer*/
 	footer {
 		margin: 0 auto;
 		text-align: center;
 	}
+
+	.location {
+		margin-top: 30px;
+	}
 }
+
+
 
